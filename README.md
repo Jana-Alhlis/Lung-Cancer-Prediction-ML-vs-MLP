@@ -12,21 +12,31 @@ The main objective is to assess whether a deep learning model offers an advantag
 
 ## Dataset
 
-The project uses the **Survey Lung Cancer** dataset, which contains survey-based patient attributes associated with lung cancer status.
+The project uses the **Survey Lung Cancer** dataset, which contains patient-related information for binary lung cancer classification.
 
-- **Dataset:** Survey Lung Cancer
+- **Dataset:** [Lung Cancer Dataset – Kaggle](https://www.kaggle.com/datasets/mysarahmadbhat/lung-cancer)
+- **File:** `survey lung cancer.csv`
+- **Number of Columns:** 16
+- **Input Features:** 15
+- **Target Variable:** `LUNG_CANCER`
 - **Task:** Binary classification
-- **Input:** Patient-related features, including age and categorical attributes
-- **Target:** Lung cancer status
-- **Data source:** [Search for the Survey Lung Cancer dataset on Kaggle](https://www.kaggle.com/datasets?search=survey+lung+cancer)
 
-The dataset was examined to understand its structure, feature distributions, class balance, and suitability for model training.
+### Dataset Attributes
 
-*Note: The exact number of records, feature count, and original dataset source should be confirmed from the dataset used in the notebook.*
+The dataset includes demographic characteristics, lifestyle factors, and health-related indicators.
+
+| Category | Features |
+|---|---|
+| Demographics | `GENDER`, `AGE` |
+| Lifestyle Factors | `SMOKING`, `ALCOHOL CONSUMING` |
+| Health-Related Indicators | `YELLOW_FINGERS`, `ANXIETY`, `PEER_PRESSURE`, `CHRONIC DISEASE`, `FATIGUE`, `ALLERGY`, `WHEEZING`, `COUGHING`, `SHORTNESS OF BREATH`, `SWALLOWING DIFFICULTY`, `CHEST PAIN` |
+| Target | `LUNG_CANCER` |
+
+The dataset was examined to understand feature distributions, missing values, and class balance before model training.
 
 ## Data Preparation
 
-The following preprocessing operations were included in the workflow:
+The preprocessing workflow included:
 
 - Inspecting missing values and feature distributions.
 - Encoding categorical variables into numerical representations.
